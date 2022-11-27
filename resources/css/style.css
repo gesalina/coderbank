@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navContainer {
+    display: flex;
+    background: rgb(18,18,80);
+;
+
+}
+.navContainer .navContent {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    min-width: 100%;
+}
+.navContainer .navContent h1{
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navContainer .navContent .navMenu {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+}
+.navContainer .navContent .navMenu a {
+    color:#d2cfcf;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.navContainer .navContent .navMenuUser {
+    display: flex;
+    align-items: center;
+}
+.navContainer .navContent .navMenuUser a {
+    color:white;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border:1px solid #034c5c;
+    background-color: #034c5c;
+    padding:10px 10px 10px 10px;
+}
+.navContainer .navContent .navMenu a:hover {
+color:white;
+}
+.navContainer .navContent .navMenuUser a:hover {
+    color:white;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border:1px solid #034c5c;
+    background-color: #034c5c;
+    padding:10px 10px 10px 10px;
+}
+.signUpContainer {
+    max-width: 20%;
+    margin:0px auto;
+}
+.signUpForm .formLabel {
+    margin:20px;
+}
+.formBtn {
+    display: flex;
+    max-width: 100px;
+    background: rgb(30, 30, 133);
+    color:white;
+    padding:10px 10px 10px 10px;
+    border: none;
+    border-radius: 20px;
+}
+.formBtn:hover{
+    cursor: pointer;
+    background: rgb(25, 25, 112);
+}
+.loginContainer {
+    margin-top: 10%;
+}
+.loginContainer .formLabel {
+    display: flex;
+    flex-direction: column;
+}
+.loginContainer .formLabel input {
+    padding: 10px 10px 10px 10px;
+    background-color: #f1f5f9;
+    border:1px solid #f1f5f9;
+    border-radius: 20px;
+}
+.signup, .login {
+    margin: auto;
+    padding: 12px 50px 12px 50px;
+    border: 1px solid #e2dbdb;
+    border-radius: 5px;
+    max-width: 24rem;
+    min-height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
