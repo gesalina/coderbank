@@ -19,10 +19,9 @@ const databaseGet = (name) => {
  */
 const databaseUpload = (to, data) => {
   if (!to || !data) {
-    return errorHandler('data_needed');
+    return false
   }
-  localStorage.setItem(to, JSON.stringify(data));
-  return console.log("Datos cargados...");
+  return localStorage.setItem(to, JSON.stringify(data));
 };
 
 export {databaseGet,databaseUpload, errorHandler};

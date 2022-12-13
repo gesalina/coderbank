@@ -24,27 +24,17 @@ class User {
    *  Crea y almacena un usuario nueva en la base de datos
    */
   create(response) {
-    let { username } = response;
+    let { username, password } = response;
     let userList = databaseGet("users");
     userList.push({
-        user: username,
-        onSession: false
+      userID: Math.floor(Math.random() * 10000 + 10),
+      user: username,
+      password: password
     });
-    let receivedData = databaseUpload("users", userList);
+    let receivedData =
+      databaseUpload("users", userList) || databaseUpload("onSession", "false") || databaseUpload("hasOneCard", "false");
     return receivedData;
   }
-  /**
-   *  Logea al usuario a la página correspondiente
-   */
-  login() {}
-  /**
-   * Actualiza los datos del usuario
-   */
-  update() {}
-  /**
-   *  Elimina al usuario
-   */
-  delete() {}
 }
 
 export { User };
